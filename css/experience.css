@@ -1,0 +1,210 @@
+@import url(../css/common.css);
+.content1 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+.content1 .content1-wrap {
+  max-width: 1200px;
+  overflow: hidden;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.content1 .content1-wrap .left-box {
+  flex-basis: 100%;
+}
+.content1 .content1-wrap .left-box h3 {
+  font-family: font_sy;
+  font-size: 3em;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #f04c23;
+}
+.content1 .content1-wrap .right-box {
+  flex-basis: 100%;
+}
+.content1 .content1-wrap .right-box img {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 15px;
+}
+.content1 .content1-wrap .right-box p {
+  font-size: 0.9em;
+}
+
+.content2 {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-image: url(../images/back-pt.png);
+}
+.content2 .content2-wrap {
+  max-width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+  height: 80%;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 3px solid #000;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background-image: url(../images/ex-bg.png);
+  background-position: center center;
+}
+.content2 .content2-wrap .text-wrap {
+  width: 80%;
+  flex-wrap: wrap;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 10%;
+}
+.content2 .content2-wrap .text-wrap h3 {
+  text-transform: uppercase;
+  font-family: font_sy;
+  font-size: 2.5em;
+  font-weight: 900;
+  color: #f04c23;
+  margin-bottom: 20px;
+}
+.content2 .content2-wrap .text-wrap p {
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.content2 .content2-wrap .text-wrap span {
+  font-size: 0.85em;
+  line-height: 0.9em;
+}
+
+.content3 {
+  max-width: 100%;
+  margin: 0 auto;
+  height: 600px;
+  border: 3px solid #000;
+  display: flex;
+  background-color: #fff;
+}
+.content3 .left-content {
+  flex-basis: 50%;
+  border-right: 3px solid #000;
+}
+.content3 .right-content {
+  flex-basis: 50%;
+}
+.content3 .right-content .desc-wrap {
+  height: 65%;
+  border-bottom: 3px solid #000;
+  text-align: center;
+  padding: 20% 10%;
+  box-sizing: border-box;
+}
+.content3 .right-content .desc-wrap h3, .content3 .right-content .desc-wrap h4 {
+  font-family: font_sy;
+  text-transform: uppercase;
+  width: 100%;
+  color: #f04c23;
+  font-weight: 900;
+}
+.content3 .right-content .desc-wrap h3 {
+  font-size: 2em;
+  line-height: 25px;
+}
+.content3 .right-content .desc-wrap h4 {
+  font-size: 1.3em;
+}
+.content3 .right-content .desc-wrap p {
+  font-size: 0.8em;
+  letter-spacing: -1px;
+  margin-top: 25px;
+}
+.content3 .right-content .detail-wrap {
+  padding: 7%;
+  box-sizing: border-box;
+  text-align: center;
+}
+.content3 .right-content .detail-wrap h3 {
+  text-transform: uppercase;
+  font-family: font_sy;
+  color: #f04c23;
+  margin-bottom: 20px;
+}
+.content3 .right-content .detail-wrap .next-btn {
+  width: 120px;
+  height: 47px;
+  margin: 0 auto;
+  background-color: antiquewhite;
+  border-radius: 50%;
+  border: 2px solid #000;
+  line-height: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.content3 .right-content .detail-wrap .next-btn a {
+  text-transform: uppercase;
+  font-family: font_sy;
+  font-weight: 900;
+  font-size: 0.5em;
+  display: inline-block;
+  width: 100%;
+}
+
+.about-work {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/backimg.png);
+  display: flex;
+  align-items: center;
+}
+.about-work .about-work-next {
+  max-width: 1200px;
+  height: 600px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10% 0;
+}
+.about-work .about-work-next h3, .about-work .about-work-next p {
+  color: #f04c23;
+}
+.about-work .about-work-next h3 {
+  font-size: 3.5em;
+  text-transform: uppercase;
+  font-family: font_sy;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+.about-work .about-work-next p {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 0.9em;
+}
+.about-work .about-work-next .next-btn {
+  width: 188px;
+  height: 84px;
+  margin: 50px auto;
+  background-image: url(../images/button.png);
+  box-sizing: border-box;
+  padding: 20px;
+  line-height: 16px;
+  cursor: pointer;
+}
+.about-work .about-work-next .next-btn a {
+  flex-wrap: wrap;
+  font-family: font_sy;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 0.8em;
+  display: inline-block;
+  width: 100%;
+}

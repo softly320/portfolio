@@ -1,0 +1,204 @@
+@import url(../css/common.css);
+.introduce {
+  width: 100%;
+  height: 800px;
+  margin-top: 100px;
+  overflow: hidden;
+}
+.introduce .introduce-wrap {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.introduce .introduce-wrap .intro-left {
+  flex-basis: 35%;
+}
+.introduce .introduce-wrap .intro-left h3, .introduce .introduce-wrap .intro-left span {
+  font-size: 30px;
+  color: #f04c23;
+}
+.introduce .introduce-wrap .intro-left h3 span {
+  font-weight: normal;
+}
+.introduce .introduce-wrap .intro-right {
+  flex-basis: 30%;
+}
+.introduce .introduce-wrap .intro-right img {
+  width: 100%;
+  border: 1px solid #000;
+  box-shadow: 10px 10px 1px #ffcb05;
+}
+
+.status {
+  width: 100%;
+  height: 1100px;
+  margin-top: 50px;
+}
+.status .status-img {
+  max-width: 100%;
+  overflow: hidden;
+  height: 350px;
+  background-color: #000;
+  margin-bottom: 80px;
+}
+.status .status-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: font_sy;
+  font-size: 1.3em;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+.status .status-wrap h3 {
+  font-weight: 900;
+  margin-bottom: 50px;
+}
+.status .status-wrap #container {
+  width: 80%;
+  height: 8px;
+  margin: 0 auto;
+}
+.status .status-wrap .progress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.7em;
+  flex-basis: 50%;
+  margin-bottom: 2em;
+}
+.status .status-wrap .progress p {
+  margin-right: 3em;
+  flex-basis: 30%;
+  font-family: font_gm;
+  font-size: 0.8em;
+  font-weight: 900;
+}
+
+.about-work {
+  width: 100%;
+  height: 2000px;
+  background-image: url(../images/backimg.png);
+}
+.about-work .about-work-top {
+  max-width: 1200px;
+  height: 800px;
+  margin: 0 auto;
+  padding: 2%;
+}
+.about-work .about-work-top .about-work-title {
+  margin: 100px 0 150px;
+}
+.about-work .about-work-top .about-work-title h3 {
+  font-size: 2em;
+  font-family: font_sy;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: transparent;
+  line-height: 50px;
+  -webkit-text-stroke: 0.5px #fff;
+}
+.about-work .about-work-slide {
+  max-width: 100%;
+}
+.about-work .about-work-slide a .img {
+  width: 400px;
+  height: 280px;
+  background-color: #ebe8e8;
+  overflow: hidden;
+  border: 3px solid #292929;
+}
+.about-work .about-work-slide a .img img {
+  width: 100%;
+}
+.about-work .about-work-next {
+  max-width: 1200px;
+  height: 600px;
+  margin: 100px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-work .about-work-next h3, .about-work .about-work-next p {
+  color: #f04c23;
+}
+.about-work .about-work-next h3 {
+  font-size: 3.5em;
+  text-transform: uppercase;
+  font-family: font_sy;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+.about-work .about-work-next p {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 0.9em;
+}
+.about-work .about-work-next .next-btn {
+  width: 188px;
+  height: 84px;
+  margin: 50px auto;
+  background-image: url(../images/button.png);
+  box-sizing: border-box;
+  padding: 20px;
+  line-height: 16px;
+}
+.about-work .about-work-next .next-btn a {
+  flex-wrap: wrap;
+  font-family: font_sy;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 0.8em;
+}
+
+.flow-text {
+  display: flex;
+  flex: 0 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: 0.3s;
+  font-size: 0.8em;
+  font-family: font_sy;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #fff;
+  background-color: #000;
+  padding: 10px 0;
+  margin: 15px 0;
+}
+
+.flow-text:hover {
+  color: #000;
+}
+
+.flow-text:hover .flow-wrap {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  cursor: pointer;
+}
+
+.flow-wrap {
+  -webkit-animation: textLoop 8s linear infinite;
+          animation: textLoop 8s linear infinite;
+  padding-right: 1vw;
+}
+
+@-webkit-keyframes textLoop {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes textLoop {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}

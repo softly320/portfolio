@@ -1,0 +1,35 @@
+@import url(../css/common.css);
+@import url(../css/webwork.css);
+.web-content .content {
+  background-image: url(../images/backdesign.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.web-content .content .content-list ul li:nth-last-child(4) .img-tab, .web-content .content .content-list ul li:nth-last-child(5) .img-tab {
+  width: 50%;
+  height: 41%;
+  overflow: hidden;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.web-content .content .content-list ul li:nth-last-child(3) .img-tab {
+  width: 85%;
+  height: 85%;
+  display: flex;
+  align-items: center;
+}
+.web-content .content .content-list ul li:nth-last-child(3) .text-tab .btn {
+  padding: 0 20px;
+}
+.web-content .content .content-list ul li:nth-last-child(3) .text-tab .desc, .web-content .content .content-list ul li:nth-last-child(3) .text-tab span:not(:nth-of-type(1)), .web-content .content .content-list ul li:nth-last-child(3) .text-tab p {
+  color: #fff;
+}
+.web-content .content .content-list ul li:nth-last-child(3) .btn-tab {
+  flex-basis: 10%;
+}
+
+.window-content {
+  width: 60%;
+}
