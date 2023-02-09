@@ -10,7 +10,7 @@
   height: 100%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 .introduce .introduce-wrap .intro-left {
@@ -24,24 +24,25 @@
   font-weight: normal;
 }
 .introduce .introduce-wrap .intro-right {
-  flex-basis: 30%;
+  flex-basis: 40%;
+  display: flex;
+  justify-content: center;
 }
 .introduce .introduce-wrap .intro-right img {
   width: 100%;
-  border: 1px solid #000;
-  box-shadow: 10px 10px 1px #ffcb05;
 }
 
 .status {
   width: 100%;
-  height: 1100px;
+  height: 1350px;
   margin-top: 50px;
 }
 .status .status-img {
   max-width: 100%;
   overflow: hidden;
   height: 350px;
-  background-color: #000;
+  background: url(../images/about-bg.png) no-repeat center;
+  background-size: cover;
   margin-bottom: 80px;
 }
 .status .status-wrap {
@@ -54,7 +55,7 @@
 }
 .status .status-wrap h3 {
   font-weight: 900;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 .status .status-wrap #container {
   width: 80%;
@@ -67,7 +68,6 @@
   align-items: center;
   line-height: 1.7em;
   flex-basis: 50%;
-  margin-bottom: 2em;
 }
 .status .status-wrap .progress p {
   margin-right: 3em;
@@ -75,6 +75,16 @@
   font-family: font_gm;
   font-size: 0.8em;
   font-weight: 900;
+}
+.status .status-wrap .desc {
+  display: flex;
+  flex-basis: 80%;
+  flex-direction: row-reverse;
+  margin-top: 10px;
+  margin-bottom: 2em;
+}
+.status .status-wrap .desc span {
+  color: #292929;
 }
 
 .about-work {
@@ -174,24 +184,13 @@
 }
 
 .flow-text:hover .flow-wrap {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  animation-play-state: paused;
   cursor: pointer;
 }
 
 .flow-wrap {
-  -webkit-animation: textLoop 8s linear infinite;
-          animation: textLoop 8s linear infinite;
+  animation: textLoop 8s linear infinite;
   padding-right: 1vw;
-}
-
-@-webkit-keyframes textLoop {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(-100%, 0, 0);
-  }
 }
 
 @keyframes textLoop {

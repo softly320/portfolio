@@ -1,0 +1,59 @@
+@charset "UTF-8";
+*{margin: 0px; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+
+@import url(../fonts/S-Core-Dream/stylesheet.css);
+.container{width: 900px; margin: 20px auto; height: 600px; overflow: hidden;
+    img{width: 100%;}}
+
+.title{
+    width: 100%;
+    padding: 5% 2%;
+    box-sizing: border-box;
+    border-top: 5px solid #ffcb05;
+    .title-wrap{
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+        h3{font-size: 2em; text-transform: uppercase; font-family: font_sy;}
+        p{font-size: 1.3em; font-family: font_score; margin-top: 10px;}
+    }
+}
+
+
+.twentytwenty-handle{
+    border: 3px solid #ffcb05;
+}
+
+.twentytwenty-left-arrow{
+    border-right: 6px solid #ffcb05;
+}
+
+.twentytwenty-right-arrow{
+    border-left: 6px solid #ffcb05;
+}
+
+.twentytwenty-horizontal .twentytwenty-handle:before, .twentytwenty-horizontal .twentytwenty-handle:after, .twentytwenty-vertical .twentytwenty-handle:before, .twentytwenty-vertical .twentytwenty-handle:after{
+    background: #ffcb05;
+}
+
+.footer{
+    width: 100%;
+    background-color: #ffcb05;
+    position: relative;
+    margin-top: 50px;
+    bottom: 0;
+    padding: 20px 0;
+    .footer-wrap{
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+        overflow: hidden;
+        p{
+            color: #000;
+            font-family: font_sy;
+            font-size: 0.7em;
+        }
+    }
+}

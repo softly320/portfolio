@@ -62,8 +62,10 @@ $font_nanum: 'Nanum Myeongjo', serif;
         overflow: hidden;
         display: flex;
         justify-content: center;
-        // background-image: url(../images/ex-bg.png);
+        background-image: url(../images/ex-bg.png);
         background-position: center center;
+        background-size: cover;
+        background-position-x: 90%;
         .text-wrap{
             width: 80%;
             flex-wrap: wrap;
@@ -83,8 +85,10 @@ $font_nanum: 'Nanum Myeongjo', serif;
                 margin-bottom: 10px;
             }
             span{
-                font-size: 0.85em;
-                line-height: 0.9em;
+                font-size: 0.9em;
+                line-height: 1.6em;
+                display: inline-block;
+                width: 100%;height: 20%; background-color: rgba(#fff, 0.3);
             }
         }
     }
@@ -100,6 +104,8 @@ $font_nanum: 'Nanum Myeongjo', serif;
     .left-content{
         flex-basis: 50%;
         border-right: 3px solid #000;
+        background-image: url(../images/ex-photo.png);
+        background-position: 90% 90%;
     }
     .right-content{
         flex-basis: 50%;
