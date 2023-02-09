@@ -85,6 +85,8 @@
 }
 .status .status-wrap .desc span {
   color: #292929;
+  font-size: 0.9em;
+  line-height: -1px;
 }
 
 .about-work {
