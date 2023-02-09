@@ -3,9 +3,24 @@ $(document).ready(function () {
         animateClass: "animate__animated"
     }).init()
 
+    $("html, body").contextmenu(function(e){
+        e.preventDefault();
+        let x = e.pageX;
+        let y = e.pageY;
+        console.log("가로:"+x, "세로:"+y)
+        $(".menu").css({
+            left: x+"px",
+            top: y+"px"
+        }).show()
+
+
+        $(".menu, html, body").click(function (e) { 
+            $(".menu").hide()
+        });
+    })
+
+
     
-
-
     const $fullmenu = $(".fullmenu .full-wrap .left ul li")
     $fullmenu.mouseover(function(){
         let i = $(this).index()
@@ -31,6 +46,8 @@ $(document).ready(function () {
         $nav.toggleClass("on")
         setCSS();
     })
+
+
 
 
 

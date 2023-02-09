@@ -9,7 +9,7 @@ $(document).ready(function () {
         "images/dprocess-2.png",
         "images/dprocess-3.png",
         "images/dprocess-4.png",
-        "images/process-1.png"
+        "images/dprocess-5.png"
     ]
     const $modal_list = $(".web-content .web-list ul li")
 

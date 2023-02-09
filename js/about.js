@@ -19,7 +19,8 @@ $(document).ready(function () {
         bar.animate(per)
     }
     skill("#html", 0.7, "#f04c23");
-    skill("#css",0.7, "#f04c23")
+    skill("#css",0.8, "#f04c23")
+    skill("#scss", 0.7,"#f04c23")
     skill("#js",0.65, "#f04c23")
     skill("#ps",0.9, "#f04c23")
     skill("#ai",0.7, "#f04c23")
@@ -42,6 +43,12 @@ $(document).ready(function () {
         mousewheel:{
             invert: true
         }
+    })
+
+
+    let typed = new Typed("#typed1",{
+        stringsElement: "#typed",
+        typeSpeed: 80
     })
 
 
